@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-h-screen">
+        <h1 class="text-5xl text-center text-blue-400 font-semibold my-8 ">Money Master</h1>
+        <div class="flex justify-center">
+            <div class="grid grid-cols-2 gap-4  bg-gray-100 w-2/3">
+                <div>
+                    <img class="object-cover w-full h-full" src="img/money.png" alt="Money-PNG">
+                </div>
+                <div class="flex items-center justify-center">
+                    <div class="w-2/3">
+                        <h4 class="text-xl font-medium mt-6 mb-2 text-center">Income</h4>
+                        <div class="flex justify-center">
+                            <table class="border-separate border-spacing-4">
+                                <tr class="">
+                                    <TD class="text-right">Income: </TD>
+                                    <td><input id="income-field" class="bg-gray-300 ms-2 p-2" type="text"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h4 class="text-xl font-medium mt-2 mb-2 text-center">Expenses</h4>
+                        <div class="flex justify-center mb-4">
+                            <table class="border-separate border-spacing-4">
+                                <tr class="">
+                                    <TD class="text-right">Food: </TD>
+                                    <td><input id="food-field" class="bg-gray-300 ms-2 p-2" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <TD class="text-right">Rent: </TD>
+                                    <td><input id="rent-field" class="bg-gray-300 ms-2 p-2" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">Clothes: </td>
+                                    <td><input id="clothes-field" class="bg-gray-300 ms-2  p-2" type="text"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="flex justify-center">
+                            <button class="text-white text-lg bg-blue-400 px-7 py-2 rounded-md font-medium"
+                                id="calculate-btn">Calculate</button>
+                        </div>
+                        <h4 class="text-xl font-medium mt-6 mb-2 text-center">Total Expenses: <span
+                                id="total-expenses">0</span></h4>
+                        <h4 class="text-xl font-medium mt-2 mb-3 text-center">Balance: <span id="balance">0</span></h4>
+                        <div class="flex justify-center items-center">
+
+                            <p>Save: </p>
+                            <input id="save-field" class="bg-gray-300 ms-4 p-2 w-2/12 text-center" type="text">
+
+                            <p class="mx-3">%</p>
+                            <button id="save-btn"
+                                class="text-white text-lg bg-blue-400 px-7 py-2 rounded-md ms-4 font-medium">Save</button>
+                        </div>
+                        <h4 class="text-xl font-medium mt-6 mb-2 text-center">Saving Amount: <span
+                                id="saving-amount">0</span></h4>
+                        <h4 class="text-xl font-medium mt-2 mb-6 text-center">Remaining Balance: <span
+                                id="rem-balance">0</span>
+                        </h4>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/money-master.js"></script>
+</body>
+
+</html>
